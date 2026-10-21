@@ -523,7 +523,7 @@ function avatar(){
   return a;
 }
 async function playChat(){
-  add('date', r => r.textContent = 'Hôm nay · 20/10');
+  add('date', r => r.textContent = 'Hôm nay');
   await sleep(1000);
   const t = add('row', r => { r.appendChild(avatar()); const c = document.createElement('div'); c.className = 'col';
     c.innerHTML = '<div class="bub typing"><i></i><i></i><i></i></div>'; r.appendChild(c); });
